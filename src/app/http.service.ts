@@ -34,7 +34,7 @@ export class HttpService {
   }
 
   getUniversitiByCountry(contry: string) {
-    return this.http.get(`${this.api}/search?country=${contry.toLowerCase()}1`).pipe(
+    return this.http.get(`${this.api}/search?country=${contry.toLowerCase()}`).pipe(
       catchError(error => this.errorHandler(error))
     )
   } 
