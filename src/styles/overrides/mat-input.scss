@@ -1,0 +1,19 @@
+.theme--light .mat-input-element {
+  caret-color: #1276ce
+}
+
+.theme--dark .mat-input-element {
+  caret-color: #ff4081;
+}
+
+.theme--dark 
+.mat-form-field.mat-focused 
+.mat-form-field-label {
+  color: #ff4081;
+}
+
+.theme--dark 
+.mat-form-field.mat-focused 
+.mat-form-field-ripple {
+    background-color: #ff4081
+}

@@ -1,0 +1,26 @@
+.mat-button,
+.mat-flat-button,
+.mat-raised-button,
+.mat-stroked-button {
+  &:not(.mat-icon-button) {
+    border-radius: 2rem !important;
+    min-width: 10rem !important;
+  }
+}
+
+.mat-button,
+.mat-flat-button,
+.mat-raised-button {
+  line-height: 3.2rem !important;
+}
+
+.mat-stroked-button {
+  line-height: 3rem !important;
+}
+
+.theme--dark .mat-flat-button.mat-primary, 
+.theme--dark .mat-raised-button.mat-primary, 
+.theme--dark .mat-fab.mat-primary, 
+.theme--dark .mat-mini-fab.mat-primary {
+  background-color: #ff4081;
+}
