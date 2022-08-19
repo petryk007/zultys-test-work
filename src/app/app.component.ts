@@ -25,7 +25,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 export class AppComponent implements OnInit {
   search = new FormControl('');
-  options: Array<any> = [];
+  options: any = [];
   filteredOptions: Observable<string[]>;
   hiddenBlock = true;
   displayedColumns = ['name', 'country', 'code', 'site'];
@@ -62,7 +62,9 @@ export class AppComponent implements OnInit {
   getCountry() {
     this.subs.add(
       this.httpService.getCountry().subscribe(res => {
-        this.options = res;
+        if (res) {
+          this.options = res;
+        }
       })
     );
   }
